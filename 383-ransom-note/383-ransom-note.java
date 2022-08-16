@@ -1,4 +1,3 @@
-import java.util.HashMap;
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
         char[] rN = ransomNote.toCharArray();
