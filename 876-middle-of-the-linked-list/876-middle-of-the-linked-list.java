@@ -14,7 +14,7 @@ class Solution {
         int count = 1;
         ListNode temp = head;
         while(temp.next != null){
-           temp = new ListNode(temp.next.val,temp.next.next);
+           temp = temp.next;
             count ++;
         }
         if(count==1){
@@ -28,7 +28,7 @@ class Solution {
                  if(i==(count/2)){
                     return temp.next;
                  } 
-                temp = new ListNode(temp.next.val,temp.next.next);       
+                temp = temp.next;       
             }
         }
         // case one middle node
@@ -38,7 +38,7 @@ class Solution {
                  if(i==(count/2)){
                     return temp.next;
                  } 
-                temp = new ListNode(temp.next.val,temp.next.next);       
+                temp = temp.next;       
             }
         }
         
